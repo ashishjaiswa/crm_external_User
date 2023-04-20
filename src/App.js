@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import UserScreen from "./screens/UserScreen";
+import {
+  BrowserRouter,
+  Route,
+  Link,
+  Routes,
+  Outlet
+} from "react-router-dom";
+import ExternalUserRouter from "./Routers/ExternalUserRouter";
+import Login from "./screens/Login";
+import TopStutas from "./components/TopStutas";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   
+   <BrowserRouter>
+   <ExternalUserRouter/>
+  </BrowserRouter>
+  
+   );
 }
 
 export default App;

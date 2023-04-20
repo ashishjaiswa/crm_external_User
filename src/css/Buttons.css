@@ -1,0 +1,17 @@
+.primaryBtn{
+ background-color: blueviolet;   
+}
+.seconderyButton{
+    background-color:#E0E0E0;
+    color:aliceblue;
+    margin-right: 5vw;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+}
+.seconderyButton:hover{
+    background-color:#3366FF;
+    
+}
